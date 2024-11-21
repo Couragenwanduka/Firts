@@ -9,6 +9,8 @@ export default function _layout() {
     <Stack screenOptions={{headerShown:false}}>
           <Stack.Screen name='index' />
           <Stack.Screen name='(routes)/onboarding/index' />
+          <Stack.Screen name='(routes)/preauth/index'/>
+          <Stack.Screen name='(routes)/login/login'/>
     </Stack>
    </ThemeProvider>
   )
