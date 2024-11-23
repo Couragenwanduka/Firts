@@ -4,7 +4,7 @@ import { useFonts } from 'expo-font';
 
 const Index = () => {
   const [fontsLoaded] = useFonts({
-    'LeagueSpartan': require('../../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf'),
+    'LeagueSpartan': require('@/assets/fonts/LeagueSpartan-VariableFont_wght.ttf'),
   });
 
   if (!fontsLoaded) {
@@ -13,10 +13,10 @@ const Index = () => {
 
   return (
     <View className='bg-primary h-screen flex justify-center items-center gap-6'>
-      <Image  source={require('../../../assets/icons/onBoardingIcon.png')} style={{ width: 100, height: 100 }}/>
+      <Image  source={require('@/assets/icons/onBoardingIcon.png')} style={{ width: 200, height: 200 }}/>
       <Text style={{ fontFamily: 'LeagueSpartan'}} className='text-white text-[48px] font-thin'> Skin </Text>
       <Text  className='text-white text-[48px] font-thin -mt-10'>Firts</Text>
-      <Text className='text-white text-[12px]'>Dermatology Center</Text>
+      <Text className='text-white text-[16px] font-semibold'>Dermatology Center</Text>
     </View>
   );
 };

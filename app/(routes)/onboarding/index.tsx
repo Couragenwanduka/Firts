@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Index from '@/app/screen/onboarding';
+import Index from '@/screen/onboarding';
 import { useRouter } from 'expo-router';
 
 const OnboardingScreen: React.FC = () => {
@@ -8,7 +8,7 @@ const OnboardingScreen: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push('/(routes)/preauthindex'); 
-    }, 2000);  
+    }, 6000);  
 
     return () => clearTimeout(timer); 
   }, [router]);
